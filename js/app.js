@@ -13,5 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     formResult.textContent = `${make} ${model} ${colour} ${enginesize}`;
     const list = document.querySelector('#car-list');
     list.appendChild(formResult);
+
+    const form = document.querySelector('#new-car-form').reset();
   });
 })
