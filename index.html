@@ -12,14 +12,12 @@
 
   <h1>Manipulating the DOM</h1>
 
+  <h2>Input new car data below</h2>
+  <hr>
+
   <form id="new-car-form">
 
     <div id="form-wrapper">
-
-    <div class="form-item">
-      <label for="model" class="primary">Model</label>
-      <input type="text" id="model" required>
-    </div>
 
     <div class="form-item">
       <label for="make" class="primary">Make</label>
@@ -27,12 +25,17 @@
     </div>
 
     <div class="form-item">
-      <label for="colour" class="primary">Engine Size</label>
+      <label for="model" class="primary">Model</label>
+      <input type="text" id="model" required>
+    </div>
+
+    <div class="form-item">
+      <label for="colour" class="primary">Colour</label>
       <input type="text" id="colour" required>
     </div>
 
     <div class="form-item">
-      <label for="engine-size" class="primary">Colour</label>
+      <label for="engine-size" class="primary">Engine Size</label>
       <select id="engine-size">
          <option value="1.0 litre">1.0 litre</option>
          <option value="1.2 litre">1.0 litre</option>
@@ -44,7 +47,13 @@
     </div>
 
   </div>
+  <input type="submit" name="" value="save">
   </form>
+
+<h2>Car List:</h2>
+<hr>
+<div id="car-list"></div>
+
 </body>
 
 
