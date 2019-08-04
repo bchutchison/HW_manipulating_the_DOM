@@ -15,5 +15,14 @@ document.addEventListener('DOMContentLoaded', () => {
     list.appendChild(formResult);
 
     const form = document.querySelector('#new-car-form').reset();
+
+
+    const handleDeleteAllClick = function (event) {
+      const carList = document.querySelector('#car-list');
+      carList.innerHTML = '';
+    }
+
+    const deleteAll = document.querySelector('#delete-all');
+    deleteAll.addEventListener('click', handleDeleteAllClick );
   });
-})
+});
